@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --h1_size: 6rem;
+  --text_size: 2rem;
+  --cyan: #00FFFF;
+  --h1_size__mobile: 4rem;
+  --text_size__mobile: 2rem;
+}
+
+.hero-container {
+  height: 100vh;
+  width: auto;
+  background-image: url("../../public/images/heroBackground.png");
+  background-size: cover;
+
+}
+.hero-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+}
+.main-content {
+    margin-top: 10%;
+}
+
+.dynamic-word{
+   color: var(--cyan);
+}
+.main-content__h1 {
+  font-family: "Baskrvville", serif;
+  font-size: var(--h1_size);
+  color: white;
+}
+.main-content__subheader{
+    font-family: "Outfit", serif;
+    color: white;
+    font-size: var(--text_size);
+    font-weight: bold;
+}
+
+.main-content__buttonList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 5em;
+}
+
+@media screen and (max_width: 768px){
+    .main-content__subheader{
+        font-size: var(--h1_size__mobile);
+    }
+}

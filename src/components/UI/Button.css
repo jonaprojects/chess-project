@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+
+:root {
+  --gold: #ffd700;
+  --white: #ffffff;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-family: "Baskervville", serif;
+  color: white;
+}
+.button:hover{
+    cursor: pointer;
+    
+}
+.primary {
+  background-color: var(--gold);
+  color: black;
+}
+.secondary {
+  background-color: none !important;
+  color: white;
+  border: solid 1px var(--gold);
+}
+
+.small {
+  font-size: 1rem;
+}
+.medium {
+  font-size: 1rem;
+}
+
+.large {
+  font-size: 1.5rem;
+}
