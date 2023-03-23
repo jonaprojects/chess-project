@@ -1,0 +1,21 @@
+.game-page__container{
+    display:flex;
+    height: 100vh;
+    width: auto;
+    background-image: url("../../../public/images/chessBackground2.png");
+    background-size: cover;
+    justify-content: center;
+    gap: 5em;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+.chessboard-container{
+    align-self: center;
+}
+
+.game-info__container{
+    align-self: center;
+    height: 700px;
+}

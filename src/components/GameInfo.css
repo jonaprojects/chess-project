@@ -1,0 +1,15 @@
+:root {
+  --wooden: #8b4513;
+}
+
+.game_info__container {
+  width: 300px;
+  background-color: var(--wooden);
+  align-self: center;
+}
+
+@media screen and (max-width: 800px){
+    .game_info__container{
+        display: none;
+    }
+}

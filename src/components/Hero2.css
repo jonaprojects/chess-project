@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --hero2_title: 5rem;
+  --hero2_title__mobile: 3rem;
+  --hero2_text: 1.2rem;
+  --gold: #ffd700;
+}
+
+.hero2-container {
+  background-image: url("../../public/images/heroBackground4Dark40.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: auto;
+  display: flex;
+}
+
+.hero2-container__content {
+  margin-left: 10%;
+  margin-top: 5%;
+  max-width: 800px;
+  color: white;
+}
+.hero2-title {
+  font-size: var(--hero2_title);
+  font-family: "Baskervville", serif;
+}
+.gold-text{
+    color: var(--gold);
+}
+.hero2-paragraph{
+    max-width: 600px;
+    font-size: var(--hero2_text);
+    font-family: "Poppins", sans-serif;
+}
+
+.hero2-buttons{
+    margin-top: 2em;
+    display:flex;
+    gap: 2em;
+}
+@media screen and (max-width: 768px) {
+  .hero2-container__content {
+    margin-left: 0;
+    margin-top: 0;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+  .hero2-buttons{
+    justify-content: center;
+  }
+  .hero2-title {
+    font-size: var(--hero2_title__mobile);
+  }
+}

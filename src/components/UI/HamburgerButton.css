@@ -1,0 +1,38 @@
+:root {
+  --list-font: 3rem;
+}
+
+.hamburger-button__container {
+  position: absolute;
+  right: 30px;
+  display:none;
+}
+.hamburger-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #2d3436;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  align-items: center;
+  background-position: top right;
+  height: 100vh;
+  width: 100vw;
+}
+.hamburger-menu__list {
+  font-size: var(--list-font);
+  line-height: 8rem;
+  list-style-type: none;
+}
+.invisible {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .hamburger-button__container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .hamburger-menu {
+    display: none;
+  }
+}

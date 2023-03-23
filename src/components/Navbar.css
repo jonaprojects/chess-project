@@ -4,30 +4,46 @@
   justify-content: space-around;
   font-family: "Baskervville", sans-serif;
   color: white;
-  padding-top:1rem;
-  padding-bottom:2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   width: 100%;
   font-size: 1.1rem;
   position: absolute;
   top: 0em;
 }
-.navbar-container__logo{
-    position: absolute;
+.navbar-container__logo {
+  position: absolute;
+  left: 2em;
+}
+.navbar-logo {
+  text-decoration: none !important;
+  cursor: pointer !important;
+  color: white !important;
 }
 .navbar-link {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  color: white !important;
 }
-.navbar-container__center{
+.navbar-container__center {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 4em;
 }
 .navbar-container__end {
-    position: absolute;
-    display:flex;
-    right: 0em;
-    gap: 1em;
-    top: 0.5em;
+  position: absolute;
+  display: flex;
+  right: 2em;
+  gap: 1em;
+  top: 0.5em;
+}
+
+@media screen and (max-width: 850px){
+  .navbar-container__center{
+    display: none;
+  }
+  .navbar-container__end{
+    display: none;
+  }
 }

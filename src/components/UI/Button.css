@@ -9,16 +9,15 @@
   display: block;
   width: fit-content;
   text-decoration: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 2em;
+  padding-right: 2em;
   font-family: "Baskervville", serif;
   color: white;
 }
-.button:hover{
-    cursor: pointer;
-    
+.button:hover {
+  cursor: pointer;
 }
 .primary {
   background-color: var(--gold);
@@ -31,12 +30,12 @@
 }
 
 .small {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 .medium {
   font-size: 1rem;
 }
 
 .large {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
