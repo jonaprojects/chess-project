@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Button from './UI/Button.js';
 import HamburgerButton from "./UI/HamburgerButton.js";
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 /*
 A dummy component for the navbar 
 */
@@ -11,18 +11,18 @@ export default function Navbar(props) {
     <div className="navbar-container">
       <div className="navbar-container__logo">
         <div className="navbar-logo__container">
-          <Link className="navbar-logo" to="/">Logo</Link>
+          <NavLink className="navbar-logo" to="/">ChessForward</NavLink>
         </div>
       </div>
       <div className="navbar-container__center">
         <div className="navbar-link__container">
-          <Link className="navbar-link">About</Link>
+          <NavLink className="navbar-link">Puzzles</NavLink>
         </div>
         <div className="navbar-link__container">
-          <Link className="navbar-link" to="/game">Play</Link>
+          <NavLink className="navbar-link" to="/game">Play</NavLink>
         </div>
         <div className="navbar-link__container">
-          <Link className="navbar-link">Contact</Link>
+          <NavLink className="navbar-link">Contact</NavLink>
         </div>
       </div>
 

@@ -3,8 +3,9 @@
 
 :root {
   --hero2_title: 5rem;
-  --hero2_title__mobile: 3rem;
+  --hero2_title__mobile: 3.5rem;
   --hero2_text: 1.2rem;
+  --hero2_text__mobile: 1rem;
   --gold: #ffd700;
 }
 
@@ -49,11 +50,17 @@
     justify-self: center;
     align-self: center;
     text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
   }
   .hero2-buttons{
     justify-content: center;
   }
   .hero2-title {
     font-size: var(--hero2_title__mobile);
+  }
+  .hero2-paragraph{
+    font-size: var(--hero2_text__mobile);
   }
 }

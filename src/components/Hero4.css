@@ -2,18 +2,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --hero3_title: 5rem;
-  --hero3_title__mobile: 3rem;
-  --hero3_text: 1.2rem;
+  --hero4_testimonial: 1.7rem;
+  --hero4_author: 1.2rem;
+  --quotation_mark: 1.5em;
+  --quotation_mark: 2rem;
+  --hero4_title: 5rem;
+  --hero4_title__mobile: 3.5rem;
   --gold: #ffd700;
 }
 
 .hero4-container {
-  background-image: url("../../public/images/heroBackground6.png");
+  background-image: url("../../public/images/heroBackground6Dark.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: auto;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   max-width: 100%; /* Add overflow hidden when finished */
+  position: relative;
+}
+.hero4-title {
+  color: white;
+  font-size: var(--hero4_title);
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+  align-self: center !important;
+  position: absolute;
+  top: 0.5em;
+}
+.testimonial-content {
+  font-family: "Baskervville", serif;
+  font-size: var(--hero4_testimonial);
+  color: white;
+  max-width: 500px;
+}
+.testimonial-author {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--hero4_author);
+  color: white;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.testimonials {
+  margin-left: 5%;
+  justify-self: center;
+}
+.testimonial1-container {
+  margin-bottom: 4rem;
+}
+.quotation-mark {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero4-title{
+    font-size: var(--hero4_title__mobile);
+  }
 }

@@ -1,74 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root{
-  --pink: #cc316f;
+*{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+:root {
   --gold: #ffd700;
+  --login-form__title: 3.1rem;
+  --login-form__label: 1.5rem;
+  --login__submit_button: 1.25rem;
+  --login-form__input: 1.2rem;
+  --login-underline: #00FFFF;
 }
+
 .login-container {
-  max-width: 300px;
-  max-height: 400px;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  width:33%;
-  padding: 40px;
-  background-color:white;
-  border-radius: 5px;
-  box-shadow: 0px 10px 13px -7px #000000;
+  color: white;
+  padding: 8em 4em 8em 4em;
+  min-width: 450px;
+  max-width: 100%;
+  position: relative;
 }
-.login-title{
-  
-}
-
-@media screen and (max-width:500px){
-    .login-container{
-        width:100vw;
-
-    }
-}
-.login-item {
-  margin-top:15px;
-  margin-bottom:15px;
+.login-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+  z-index: 0;
+  background-color: #ffffff;
+  opacity: 2%;
 }
 
-.login-title{
-    font-family: 'Prompt', san-serif;
-    font-weight:800;
-    justify-self:center;
-    display:flex;
-    justify-content:center;
+.login-form {
+  width: 100% !important;
 }
-.form-input__text{
-    height:2.5em;
-    max-height:70px;
-    width:100%;
-    border-radius: 5px;
-    border:solid;
-    border-width: 1px;
-    border-color:#c2c3c4;
-    font-size:16px !important;
+.login-form__label {
+  font-family: "Baskervville", serif;
+  font-size: var(--login-form__label);
 }
-
-.submit-button{
-    margin-top:15px;
-    border: none;
-    outline: none;
-    width:100%;
-    border-radius:5px;
-    height:4em;
-    max-height:40px;
-    font-size:16px;
-    cursor: pointer;
-    color: white;
-    background-color: var(--pink);
-    text-transform: uppercase;
+.form-input__text {
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: var(--login-form__input);
+  position: relative;
+  z-index: 1;
+}
+.login-title {
+  font-family: "Baskervville", serif;
+  font-size: var(--login-form__title);
+  text-align: center;
+}
+.form-input__text {
+  background-color: black;
+  border: 1px solid;
+  border-color: var(--gold);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-@media screen and (max-width: 800px) {
-  .login-flex__item {
-    flex-direction: column;
-  }
+.login-form__submit-button {
+  border: none;
+  background-color: var(--gold);
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "Baskervville", serif;
+  font-size: var(--login__submit_button);
+  margin-top: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.login-form__forgot-password {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 1em;
+  display: inline-flex;
+  flex-direction: column;
+}
+.login-form__forgot-password:after{
+  content: "";
+  border-color:white;
+  width: 100%;
+  border-bottom: 2px solid var(--login-underline);
+  content: '';
+}
+
+@media screen and (max-width: 768px){
+  .login-container{
+    min-width:0em;
+  } 
 }

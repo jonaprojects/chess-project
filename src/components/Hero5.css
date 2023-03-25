@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --gold: #ffd700;
+}
+
+.hero5-container {
+  background-image: url("../../public/images/chessking.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%; /* Add overflow hidden when finished */
+}
+.hero5-contact-form__positioning{
+  margin-left: 3%;
+}

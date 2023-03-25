@@ -1,7 +1,23 @@
-.player-info__time{
-    color: white;
-    background-color: black;
-    font-size: 1.1rem;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --dark_brown: #3c0505;
+  --player-info__size: 1.2rem;
+}
+
+
+.player-info__container {
+  background-color: var(--dark_brown);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Baskervville", serif;
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  box-sizing: border-box;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: var(--player-info__size);
 }

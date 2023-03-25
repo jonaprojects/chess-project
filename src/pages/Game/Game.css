@@ -1,21 +1,40 @@
-.game-page__container{
-    display:flex;
-    height: 100vh;
-    width: auto;
-    background-image: url("../../../public/images/chessBackground2.png");
-    background-size: cover;
-    justify-content: center;
-    gap: 5em;
+.game-page__container {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  max-width: 100%;
+  background-image: url("../../../public/images/gameBackground1Dark50.png");
+  background-size: cover;
+  gap: 2em;
+}
+
+.chessboard-container {
+  margin-left: 35%;
+}
+
+.game-page__content {
+  display: flex;
+  margin-top: 6em;
+}
+#gameInfoContainer {
+  margin-left: 1em;
 }
 
 @media screen and (max-width: 768px) {
     
-}
-.chessboard-container{
-    align-self: center;
-}
-
-.game-info__container{
-    align-self: center;
-    height: 700px;
-}
+    .game-page__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #gameInfoContainer {
+        display: none;
+    }
+    .game-page__content{
+        justify-content: center;
+        margin-top: 0em;
+    }
+    .chessboard-container{
+      margin-left: 0;
+    }
+  }

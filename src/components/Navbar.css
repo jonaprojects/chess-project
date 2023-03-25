@@ -16,14 +16,22 @@
   left: 2em;
 }
 .navbar-logo {
-  text-decoration: none !important;
-  cursor: pointer !important;
-  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
 .navbar-link {
   text-decoration: none !important;
   cursor: pointer !important;
   color: white !important;
+}
+.navbar-link:hover{
+  font-weight: bold;
+}
+
+.active{
+  font-weight: bold;
 }
 .navbar-container__center {
   display: flex;

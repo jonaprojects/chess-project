@@ -3,8 +3,9 @@
 
 :root {
   --hero3_title: 5rem;
-  --hero3_title__mobile: 3rem;
+  --hero3_title__mobile: 3.5rem;
   --hero3_text: 1.2rem;
+  --hero3_text__mobile: 1rem;
   --gold: #ffd700;
 }
 
@@ -37,4 +38,32 @@
   margin-top: 3em;
   display: flex;
   gap: 2em;
+}
+
+@media screen and (max-width: 768px){
+  .hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .hero3-content{
+    margin: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    align-self:center;
+    text-align: center;
+  }
+  .hero3-title{
+    font-size:var(--hero3_title__mobile);
+  }
+  .hero3-paragraph{
+    font-size: var(--hero3_text__mobile);
+  }
+  .hero3-buttons{
+    justify-content: center;
+  }
 }

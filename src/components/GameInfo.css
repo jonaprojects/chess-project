@@ -1,11 +1,21 @@
 :root {
   --wooden: #8b4513;
+  --brown: #3C0505;
 }
 
 .game_info__container {
   width: 300px;
-  background-color: var(--wooden);
-  align-self: center;
+  position: relative;
+  z-index: 0;
+}
+
+.game-info__layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 20%;
+  z-index: 0;
 }
 
 @media screen and (max-width: 800px){
