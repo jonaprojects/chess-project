@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+
+:root {
+  --error-page__title: 5rem;
+  --error-page__paragraph: 2rem;
+  --error-page__paragraph__mobile: 1.5rem;
+  --error-page__button: 1.2rem;
+}
+.error-page__container {
+  background-image: url("../../public/images/heroBackground7.jpg");
+  background-size: cover;
+  background-repeat: none;
+  height: 100vh;
+  max-width: 100%;
+  color: white;
+  font-family: "Baskervville", serif;
+  position: relative;
+}
+
+.error-page__main-content {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
+
+.error-page__title {
+  font-size: var(--error-page__title);
+}
+#error-page__text {
+    margin-top:  0.75em;
+    font-size: var(--error-page__paragraph);
+}
+
+.error-page__back-home{
+    border: none;
+    color: black;
+    background-color: var(--gold);
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    position: absolute;
+    margin-top: 3em;
+    padding-left: 2em;
+    padding-right:2em;
+    font-family: "Baskervville", serif;
+    font-size: var(--error-page__button);
+}
+
+@media screen and (max-width: 768px){
+    .error-page__container{
+        
+    }
+    #error-page__text{
+        font-size: var(--error-page__paragraph__mobile);
+        margin-right: 0.5em;
+    }
+    .error-page__new-line{
+        display: none;
+
+    }
+
+}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom';
+
 import "./LoginForm.css";
 
 export default function LoginForm() {
@@ -28,7 +30,6 @@ export default function LoginForm() {
       <div className="login-layer"></div>
       <form id="login-form">
         <div className="login-title">Login</div>
-
         <div className="login-item">
           <p className="login-form__label">E-mail</p>
           <input
@@ -50,7 +51,7 @@ export default function LoginForm() {
         </div>
         <div className="login-item">
           <div className="login-form__forgot-password">
-            <span>forgot your password?</span>
+            <Link to="/forgotPassword">forgot your password?</Link>
             
           </div>
         </div>

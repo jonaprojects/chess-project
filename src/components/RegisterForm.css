@@ -10,21 +10,21 @@
 }
 :root {
   --gold: #ffd700;
-  --login-form__title: 3.1rem;
-  --login-form__label: 1.5rem;
-  --login__submit_button: 1.25rem;
-  --login-form__input: 1.2rem;
-  --login-underline: #00ffff;
+  --register-form__title: 3.1rem;
+  --register-form__label: 1.5rem;
+  --register__submit_button: 1.25rem;
+  --register-form__input: 1.2rem;
+  --register-underline: #00ffff;
 }
 
-.login-container {
+.register-container {
   color: white;
   padding: 8em 4em 8em 4em;
   min-width: 450px;
   max-width: 100%;
   position: relative;
 }
-.login-layer {
+.register-layer {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -34,32 +34,33 @@
   z-index: 0;
   background-color: #ffffff;
   opacity: 2%;
+  display: none;
 }
 
-.login-form {
+.register-form {
   width: 100% !important;
 }
-.login-form__label {
+.register-form__label {
   font-family: "Baskervville", serif;
-  font-size: var(--login-form__label);
+  font-size: var(--register-form__label);
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
-.form-input__text {
+.register-form__input {
   width: 100%;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: var(--login-form__input);
+  font-size: var(--register-form__input);
   position: relative;
   z-index: 1;
 }
-.login-title {
+.register-title {
   font-family: "Baskervville", serif;
-  font-size: var(--login-form__title);
+  font-size: var(--register-form__title);
   text-align: center;
 }
-.form-input__text {
+.register-form__input {
   background-color: black;
   border: 1px solid;
   border-color: var(--gold);
@@ -67,41 +68,53 @@
   padding-bottom: 0.5em;
 }
 
-.login-form__submit-button {
+.register-form__checkbox{
+  z-index: 1;
+  background-color:black;
+  font-size: 1.2rem;
+}
+
+.register-form__submit-button {
   border: none;
   background-color: var(--gold);
   width: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
   font-family: "Baskervville", serif;
-  font-size: var(--login__submit_button);
+  font-size: var(--register__submit_button);
   margin-top: 2em;
   position: relative;
   z-index: 1;
 }
 
-.login-form__forgot-password {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  margin-top: 1em;
-  display: inline-flex;
-  flex-direction: column;
+.register-form__checkbox {
+  position: absolute;
+  opacity: 0;
 }
-.login-form__forgot-password a {
-  z-index: 1;
-  cursor: pointer;
+
+.register-form__custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #9e1d1d;
+  border-radius: 4px;
 }
-.login-form__forgot-password:after {
+
+.checkbox-input:checked + .checkbox-custom:after {
   content: "";
-  border-color: white;
-  width: 100%;
-  border-bottom: 2px solid var(--login-underline);
-  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 @media screen and (max-width: 768px) {
-  .login-container {
+  .register-container {
     min-width: 0em;
   }
 }

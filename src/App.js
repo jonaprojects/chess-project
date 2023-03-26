@@ -7,7 +7,8 @@ import Game from "./pages/Game/Game.js";
 import Root from "./pages/Root.js";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from "./pages/ErrorPage";
+import ErrorPage from "./pages/ErrorPage.js";
+import Register from "./pages/Register.js";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/game", element: <Game /> },
+      {path: "/register", element: <Register/>}
     ],
   },
 ]);
